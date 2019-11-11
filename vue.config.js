@@ -1,23 +1,5 @@
-let UglifyJsPlugin = require("uglify-js");
-let StyleLoader = require('style-loader');
-let CssLoader = require('css-loader');
-let SassLoader = require('sass-loader');
-
+const path = require('path');
 
 module.exports = {
-    outputDir: process.env.NODE_ENV === 'production' ? '../../public/dist' : './dist',
-    css: {
-        loaderOptions: {
-            css: {
-
-            },
-
-            sass: {
-
-            }
-
-        }
-
-    }
-
+    outputDir: process.env.NODE_ENV === 'production' ? path.resolve(__dirname, '../../public/dist') : './dist',
 };
