@@ -11,7 +11,7 @@ const getters = {
             return {
                 "rent_rate": item.rent_rate,
                 "label": item.label,
-                "id" : item.id,
+                "id": item.id,
             }
         })
 
@@ -42,6 +42,15 @@ const actions = {
             }
 
         })
+    },
+
+    addToCart: async (context, id) => {
+        let promise = new Promise((resolve, reject) => {
+           if (!localStorage.getItem('user')) {
+               reject('Unauthenticated');
+           }
+        });
+        return await promise;
     }
 };
 
