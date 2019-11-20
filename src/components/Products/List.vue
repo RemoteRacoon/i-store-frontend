@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <div class="h3 text-uppercase text-center mt-5">Products List</div>
+    <div class="container mt-5">
+        <div class="h3 text-uppercase text-center">Products List</div>
         <div class="items-list">
             <item v-for="item in prods" :item="item" :key="item.id"></item>
         </div>
