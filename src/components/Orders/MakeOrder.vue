@@ -1,5 +1,7 @@
 <template>
-    $END$
+    <div>
+        <div class="h1">Make order Section</div>
+    </div>
 </template>
 
 <script>
